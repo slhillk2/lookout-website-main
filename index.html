@@ -8,59 +8,63 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Project Template</title>
+    <title>Lookout on the Pier</title>
 </head>
 
 
 <body>
-    <div class="body-container">
-        <header class="head-container">
-            <h1>Lookout <br> <span>on the pier</span> </h1>
-            <nav class="nav-container">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="about-us.html">About</a></li>
-                    <li><a href="contact-us.html">Contact</a></li>
-                </ul>
-            </nav>        
-        </header> 
-           
+    <header class="head-logo">
+        <h1>Lookout <br> <span>on the pier</span> </h1>
+    </header> 
+
+    <div class="wrapper">    
+        <nav class="nav-grid-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+        </nav>        
 
         
-        <div class="grid-container">
-            <div class="value-prop">
+        <section class="top-gallery-grid-container">
+            <header class="value-prop">
                 <h2>Scarborough's finest</h2>
-                <p>Cafe, Bistro and Seafood Restaurant</p>
-            </div>     
-            
+                <i class="fa-solid fa-mug-saucer"> Cafe</i>
+                <br>
+                <i class="fa-solid fa-utensils"> Bistro</i>
+                <br>
+                <i class="fa-solid fa-fish"> Seafood Restaurant</i>
+            </header>
             <div class="image main-image">
                 <img src="img/crab_salad.jpg" alt="image of crab salad food dish">
             </div>
-            <div class="image">
-            <img src="img/mixed_seafood.jpg" alt="image of mixed seafood dish">
+        </section>   
+
+        <section class="boxes-grid-container">
+            <div class="image box-a">
+                <img src="img/mixed_seafood.jpg" alt="image of mixed seafood dish">
             </div>
         
-            <div class="image">
-            <img src="img/seafood-platter_wine_chips.jpg" alt="image of seafood platter, wine and chips dish">
+            <div class="image box-b">
+                <img src="img/seafood-platter_wine_chips.jpg" alt="image of seafood platter, wine and chips dish">
             </div>
             
-            <div class="image">
-            <img src="img/tobasco_seafood.jpg" alt="image of seafood dish">
+            <div class="image box-c">
+                <img src="img/tobasco_seafood.jpg" alt="image of seafood dish">
             </div>
-        </div>
+        </section>
         
-        
-
         <script src="script.js"></script>
-        
-        <footer class="footer-container">
+    </div>  
+
+    <footer>
             <div class="contact-details">
                 <i class="fa-solid fa-location-dot"> West Pier,<br> Scarborough,<br> YO11 1PD</i>
                 <i class="fa-solid fa-envelope"> lookoutcafe8@gmail.com</i>
                 <i class="fa-solid fa-phone"> 01723351000</i>
             </div>
-        </footer>
-    </div>
+    </footer>
 </body>
 </html>
