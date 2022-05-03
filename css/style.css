@@ -31,6 +31,7 @@ img {
 
 .wrapper {
   margin: 10px 25px;
+  padding-bottom: 2.5rem;
 }
 
 /* Head ======================== */
@@ -150,12 +151,31 @@ img {
   grid-area: box-c;
 }
 
+/* google maps iframe ==================*/
+
+.map-flex-container {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  margin: 30px;
+}
+
+.map-flex-container iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
 /* footer ======================== */
 .footer {
   background-color: #064273;  
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 100%;
-
+  height: 2.5rem;  
 
 }
 
