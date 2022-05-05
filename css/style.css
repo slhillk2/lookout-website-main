@@ -6,6 +6,8 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -15,9 +17,9 @@ html {
 }
 
 body {
-  width: 99%;
+  width: 100%;
   line-height: 1.4;
-  margin: 5px;
+  color: #333;
 }
 
 a {
@@ -38,8 +40,8 @@ img {
 .head-logo {
   background-color: #064273;
   width: 100%;
-  padding: 10px;
   margin: 0;
+  overflow: auto;
 }
 
 .head-logo h1 {
@@ -50,9 +52,9 @@ img {
   font-size: 4rem;
 
   max-width: 400px;
-  margin: 0 auto;
-  margin-bottom: 0;
-  padding: 10px;
+  margin: 10px auto;
+  margin-bottom: 10px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -94,8 +96,9 @@ img {
 /* gallery grid container ==================*/
 .top-gallery-grid-container {
   display: grid;
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   grid-template-areas: 
     'value-prop main-img main-img'
     'value-prop main-img main-img';
