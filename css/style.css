@@ -37,33 +37,18 @@ img {
 }
 
 /* Head ======================== */
-.head-logo {
+.head-banner {
   background-color: #064273;
   width: 100%;
   margin: 0;
-  overflow: auto;
 }
 
-.head-logo h1 {
-  border: 5px solid #fff;
-  border-radius: 50%;
-  color: #fff;
-  font-family: 'Parisienne', cursive;
-  font-size: 4rem;
-
-  max-width: 400px;
+.logo {
+  display: block;
+  max-width: 300px;
   margin: 10px auto;
-  margin-bottom: 10px;
   padding: 20px;
-  text-align: center;
 }
-
-.head-logo h1 span {
-  font-family: 'ABeeZee', sans-serif;
-  font-size: 2rem;
-  text-align: right;
-}
-
 
 /* nav ======================== */
 .nav-grid-container ul {
