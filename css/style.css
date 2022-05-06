@@ -127,6 +127,10 @@ img {
   color: #af5800;
 }
 
+.btn-book-now:active {
+  transform: scale(90%);
+}
+
 .btn-book-now::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
