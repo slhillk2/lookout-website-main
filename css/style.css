@@ -108,10 +108,10 @@ img {
   font-family: 'ABeeZee', sans-serif;
   text-align: center;
   grid-area: value-prop;
-  line-height: 2rem;
   min-height: 250px;
   display: flex;
   flex-direction: column;
+  justify-content: baseline;
 }
 
 .value-prop h2 {
@@ -121,12 +121,32 @@ img {
 .value-prop i {
   font-size: 1rem;
   letter-spacing: 2px;
+  padding-top: 1rem;
 }
 
 .main-image {
   grid-area: main-img;
 }
 
+.btn-book-now {
+  margin: 2rem auto;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  background-color: #064273;
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 2px black;
+}
+
+.btn-book-now:hover {
+  color: #af5800;
+}
+
+.btn-book-now::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: " \f054";
+}
 
 /* box img gallery ======================== */
 .boxes-grid-container {
