@@ -6,8 +6,8 @@ class Nav extends HTMLElement {
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="about-us.html">About</a></li>
-                        <li><a href="contact-us.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="menu.html">Menu</a></li>        
                     </ul>
                 </nav>
             </div>
