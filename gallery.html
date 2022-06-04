@@ -7,14 +7,28 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="components/header.js" type="module" defer></script>
-    <script src="components/nav.js" type="module" defer></script>
     <script src="components/footer.js" type="module" defer></script>
     <title>Lookout on the Pier</title>
 </head>
 <body>
-    <header-component></header-component>
-    <nav-component></nav-component>
+    <header class="head-banner">
+        <img src="img/lookout_logo_transbg2.png" alt="lookout on the pier logo image" class="logo">    
+        <nav class="nav-grid-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul> 
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>  
+        </nav>
+    
+    </header>
+    <script src="js/script.js"></script>
     <footer-component></footer-component>
-    <script src="script.js"></script>
 </body>
 </html>
