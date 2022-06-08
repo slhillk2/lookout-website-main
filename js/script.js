@@ -1,12 +1,12 @@
 const burgerMenu = document.querySelector('.burger-menu')
-const navMenu = document.querySelector('.side-menu .nav-links')
+const displaySideMenu = document.querySelector('.side-menu')
+
 
 burgerMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('active')
+    displaySideMenu.classList.toggle('active')
     // burger animation
     burgerMenu.classList.toggle('toggle')
 })
-
 
 
 
