@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Barlow+Condensed:wght@200&display=swap');
+
 /* Universal styling===========================*/
 
 * {
@@ -37,6 +40,11 @@ img {
   padding: 2rem 0;
   max-width: 1000px;
 }
+
+ul {
+  list-style: none;
+}
+
 
 /* Head ======================== */
 .head-banner {
@@ -223,6 +231,15 @@ img {
 
 /* google maps iframe ==================*/
 
+.map-header {
+  color: #064273;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 2rem;
+  padding: 0 10%;
+  font-family: 'Amatic SC', cursive;
+}
+
 .map-flex-container {
   overflow:hidden;
   padding-bottom:56.25%;
@@ -363,13 +380,13 @@ object-fit: cover;
   So, we have to place them individually
   at their correct positions. */
   .slide-btn-1 {
-    left: 45%;
+    left: 30%;
   }
   .slide-btn-2 {
-    left: 50%;
+    left: 40%;
   }
   .slide-btn-3 {
-    left: 55%;
+    left: 50%;
   }
   .slide-btn-4 {
     left: 60%;
@@ -398,6 +415,106 @@ object-fit: cover;
   .slide-btn:focus {
     background-color: #064273;
   }
+
+/* Menu Page ========================
+Fonts: 
+Menu item = Amatic SC regular
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+Description = Abadi MT-Condensed Light or Barlow condensed
+*/
+
+/* Sub menu h2, button and accordion */
+
+.submenu-btn {
+  border: none;
+  text-align: center;
+  margin: 0.2rem auto;
+  background-color: #064273;
+  color: #fff;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.submenu-btn span {
+  flex: 1;
+}
+
+.submenu-btn::after {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+	content: "\2b";
+  color: #fff;
+  font-size: 3rem;
+  width: 75px;  
+
+}
+
+.submenu-btn.active::after {
+  transform: rotate(45deg);  
+}
+
+.sub-menu {
+  overflow: hidden;
+
+}
+
+.sub-menu-items {
+  height: 0;
+}
+
+.sub-menu-items.active {
+  height: 100%;
+}
+
+.menu-item {
+  padding: 1rem;
+}
+
+.name-price-desc-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.name-price-container {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Amatic SC', cursive;
+  margin-bottom: 0.2rem;
+}
+
+.item-name {
+  font-size: 2rem;
+}
+.menu-subheader {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0.2rem auto;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+}
+
+.dash-border {
+  color: #fff;
+  border-bottom: 2px dashed #064273;
+  width: 40%;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.item-price {
+  font-size: 2rem;
+}
+
+
+/* font-family: 'Barlow Condensed', sans-serif; */
 
 /* media queries ==================== */
 @media screen and (max-width: 1044px) {
@@ -486,10 +603,25 @@ object-fit: cover;
 
     gap: 6px;
   }
+
+  .dash-border {
+    display: none;
+  }
+
+  /* .name-price-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-content:space-around;
+  } */
+
 }
 
 
 @media screen and (max-width: 510px) {
+  .item-name {
+    font-size: 1.75rem;
+  }
+  
   .contact-details {
     flex-direction: column;
     justify-content: space-around;
