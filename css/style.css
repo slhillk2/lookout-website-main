@@ -162,7 +162,7 @@ ul {
 }
 
 .value-prop {
-  font-family: 'ABeeZee', sans-serif;
+  font-family: 'Amatic SC', cursive;
   text-align: center;
   grid-area: value-prop;
   min-height: 250px;
@@ -172,7 +172,7 @@ ul {
 }
 
 .value-prop h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .value-prop i {
@@ -186,9 +186,10 @@ ul {
 }
 
 .btn-book-now {
+  font-family: 'Amatic SC', cursive;
   margin: 2rem auto;
-  padding: 0.75rem;
-  font-size: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 2rem;
   background-color: #064273;
   color: #fff;
   border-radius: 1rem;
@@ -196,7 +197,8 @@ ul {
 }
 
 .btn-book-now:hover {
-  color: #af5800;
+  color: #064273;
+  background-color: #fff;
 }
 
 .btn-book-now:active {
@@ -206,7 +208,12 @@ ul {
 .btn-book-now::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: " \f054";
+  content: "\f054";
+  margin-left: 15px;
+}
+
+.value-prop a {
+  width: 100%;
 }
 
 /* box img gallery ======================== */
@@ -215,7 +222,7 @@ ul {
   gap: 20px;
   margin: 1rem;
   grid-template-areas: 
-    'box-a box-b box-c';
+    'box-a box-c box-b';
 }
 
 .boxes-grid-container img {
@@ -234,6 +241,31 @@ ul {
 
 .box-c {
   grid-area: box-c;
+  padding: 1em;
+}
+
+/* Testimonial quotes _____________ */
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+blockquote::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f10d';
+  margin-right: 10px;
+}
+
+blockquote::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f10e';
+  margin-left: 10px;
 }
 
 /* google maps iframe ==================*/
@@ -261,6 +293,22 @@ ul {
   height:100%;
   width:100%;
   position:absolute;
+}
+
+.book-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-table a {
+  color: #064273;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 3rem;
+  padding: 0 10%;
+  font-family: 'Amatic SC', cursive;
+  text-decoration: underline;
 }
 
 /* footer ======================== */
@@ -463,7 +511,7 @@ Description = Abadi MT-Condensed Light or Barlow condensed
 .submenu-btn {
   border: none;
   text-align: center;
-  margin: 0.2rem auto;
+  margin: 1rem auto;
   background-color: #064273;
   color: #fff;
   font-family: 'Amatic SC', cursive;
@@ -485,7 +533,7 @@ Description = Abadi MT-Condensed Light or Barlow condensed
   font: var(--fa-font-solid);
 	content: "\2b";
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
   width: 75px;  
 
 }
@@ -505,7 +553,7 @@ Description = Abadi MT-Condensed Light or Barlow condensed
 }
 
 .sub-menu-items.active {
-  max-height: 1000px;
+  max-height: 4000px;
   transition: max-height 0.5s ease-in;
 }
 
@@ -646,9 +694,9 @@ Description = Abadi MT-Condensed Light or Barlow condensed
 
   .boxes-grid-container {
     grid-template-areas: 
-    'box-a'
+    'box-c'
     'box-b'
-    'box-c';
+    'box-a';
 
     gap: 6px;
   }
