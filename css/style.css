@@ -51,15 +51,14 @@ ul {
   background-color: #064273;
   width: 100%;
   margin: 0;
-  padding-bottom: 10px;
   min-height: 8vh;
 }
 
 .logo {
   display: block;
   max-width: 300px;
-  min-width: 200px;
-  width: 40%;
+  min-width: 150px;
+  width: 45%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -80,30 +79,38 @@ ul {
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 0 5%;
+  justify-content: space-evenly;
   margin-left: 1rem;
   margin-right: 1rem;
   list-style-type: none;
+  max-width: 1000px;
 }
 
+.nav-links li {
+  border-right: #fff solid 1px;
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links li:last-child {
+  border-right: none;
+}
 
 .nav-links a {
   background-color: #064273;
   color: #fff;
-  display: block;
+  /* display: block; */
   padding: 0.5rem 1.5rem;
   margin: 0 auto;
-  font-size: 1.5rem;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5rem;
   text-align: center;
-  border: #fff solid 1px;
-  box-shadow: 0 1px 5px rgba(240, 238, 238, 0.8);
-  max-width: 15rem;
+  display: block;
 }
 
-
 .nav-links a:hover {
-  color: #af5800;
+  color: #064273;
+  background-color: #fff;
 }
 
 .nav-links li a:active {
@@ -235,7 +242,7 @@ ul {
   color: #064273;
   text-align: center;
   margin-top: 5%;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 0 10%;
   font-family: 'Amatic SC', cursive;
 }
@@ -263,17 +270,38 @@ ul {
   bottom: 0;
   width: 100%;
   height: 2.5rem;  
-
 }
 
 .contact-details {
   background-color: #064273;
   margin: 0 auto;
   padding: 1rem;
-  display: flex;  
-  justify-content: space-around;
-  align-items: center;
   color: #fff;
+  display: grid;
+  grid-template-areas: 
+    'address opening-times'
+    'email-address opening-times'
+    'number opening-times';
+}
+
+.address, .email-address, .number{
+  display: flex;
+  align-items: center;
+}
+
+.address, .email-address, .number, i {
+  margin-right: 10px;
+}
+.address {
+  grid-area: address;
+}
+
+.email-address {
+  grid-area: email-address;
+}
+
+.number {
+  grid-area: number;
 }
 
 .contact-details i {
@@ -282,6 +310,13 @@ ul {
 
 .contact-details i br {
   display: none;
+}
+
+.opening-times {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-area: opening-times;
 }
 
 /* Gallery page ================================= */
@@ -465,11 +500,13 @@ Description = Abadi MT-Condensed Light or Barlow condensed
 }
 
 .sub-menu-items {
-  height: 0;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
 }
 
 .sub-menu-items.active {
-  height: 100%;
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
 }
 
 .menu-item {
@@ -541,9 +578,18 @@ Description = Abadi MT-Condensed Light or Barlow condensed
     padding: 0;
   }
 
+  .logo {
+    padding: 0;
+  }
+
   /* hide the main nav bar */
   .nav-grid-container .nav-links {
     display: none;
+  }
+
+  .nav-grid-container {
+    position: absolute;
+    width: 100%;
   }
   
 
@@ -565,10 +611,12 @@ Description = Abadi MT-Condensed Light or Barlow condensed
     align-items: center;
   }
   
-  .side-menu .nav-links a {
-    border-left: none;
+  .nav-links li {
     border-right: none;
-    box-shadow: none;
+  }
+  
+
+  .side-menu .nav-links a {
     width: 100vw;
     max-width: 100vw;
   }
@@ -577,8 +625,9 @@ Description = Abadi MT-Condensed Light or Barlow condensed
 
   .burger-menu {
     display: block;
-    position: relative;
-    align-self: flex-end;
+    position: absolute;
+    right: 20px;
+    top: -50px;
   }
 
   .active {
@@ -608,11 +657,18 @@ Description = Abadi MT-Condensed Light or Barlow condensed
     display: none;
   }
 
-  /* .name-price-container {
-    display: inline-flex;
-    flex-direction: column;
-    align-content:space-around;
-  } */
+  .contact-details {
+    grid-template-areas: 
+    'opening-times'
+    'address'
+    'email-address'
+    'number';
+  }
+
+  .opening-times {
+    padding-bottom: 5%;
+    margin-left: 20px;
+  }
 
 }
 
