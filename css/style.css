@@ -27,7 +27,6 @@ body {
 }
 
 a {
-  color: #fff;
   text-decoration: none;
 }
 
@@ -205,15 +204,21 @@ ul {
   transform: scale(90%);
 }
 
-.btn-book-now::after {
+.btn-book-now a::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f054";
   margin-left: 15px;
 }
 
-.value-prop a {
+.btn-book-now a {
+  display: block;
   width: 100%;
+  color: #fff;
+}
+
+.btn-book-now a:hover {
+  color: #064273;
 }
 
 /* box img gallery ======================== */
@@ -358,6 +363,10 @@ blockquote::after {
 
 .contact-details i br {
   display: none;
+}
+
+.contact-details a {
+  color: #fff;
 }
 
 .opening-times {
