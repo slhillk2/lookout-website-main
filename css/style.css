@@ -321,20 +321,18 @@ blockquote::after {
   background-color: #064273;  
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   height: 2.5rem;  
 }
 
-.contact-details {
+.footer-grid-container {
   background-color: #064273;
-  margin: 0;
+  margin: 0 auto;
   padding: 1rem 4rem;
   color: #fff;
   display: grid;
   grid-template-areas: 
-    'address opening-times'
-    'email-address opening-times'
-    'number opening-times';
+    'contact-details opening-times';
 }
 
 .address, .email-address, .number{
@@ -345,26 +343,11 @@ blockquote::after {
 .address, .email-address, .number, i {
   margin-right: 10px;
 }
-.address {
-  grid-area: address;
-  margin-top: 10%;
-}
-
-.email-address {
-  grid-area: email-address;
-}
-
-.number {
-  grid-area: number;
-}
 
 .contact-details i {
   letter-spacing: 2px;
 }
 
-.contact-details i br {
-  display: none;
-}
 
 .contact-details a {
   color: #fff;
@@ -376,6 +359,7 @@ blockquote::after {
   grid-template-rows: repeat(3, 1fr);
   grid-area: opening-times;
   justify-items: center;
+  height: 100%;
 }
 
 /* Gallery page ================================= */
@@ -716,17 +700,14 @@ Description = Abadi MT-Condensed Light or Barlow condensed
     display: none;
   }
 
-  .contact-details {
+  .footer-grid-container {
     grid-template-areas: 
     'opening-times'
-    'address'
-    'email-address'
-    'number';
+    'contact-details';
   }
 
   .opening-times {
-    padding-bottom: 5%;
-    margin-left: 20px;
+    padding-bottom: 10%;
   }
 
 }
