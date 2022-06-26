@@ -328,7 +328,7 @@ blockquote::after {
 .footer-grid-container {
   background-color: #064273;
   margin: 0 auto;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   color: #fff;
   display: grid;
   grid-template-areas: 
