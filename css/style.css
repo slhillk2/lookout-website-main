@@ -327,8 +327,8 @@ blockquote::after {
 
 .contact-details {
   background-color: #064273;
-  margin: 0 auto;
-  padding: 1rem;
+  margin: 0;
+  padding: 1rem 4rem;
   color: #fff;
   display: grid;
   grid-template-areas: 
@@ -347,6 +347,7 @@ blockquote::after {
 }
 .address {
   grid-area: address;
+  margin-top: 10%;
 }
 
 .email-address {
@@ -374,6 +375,7 @@ blockquote::after {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-area: opening-times;
+  justify-items: center;
 }
 
 /* Gallery page ================================= */
