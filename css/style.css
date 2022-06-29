@@ -157,7 +157,7 @@ ul {
   margin: 1rem;
   grid-template-areas: 
     'value-prop main-img main-img'
-    'value-prop main-img main-img';
+    'ot-widget main-img main-img';
 }
 
 .value-prop {
@@ -167,7 +167,7 @@ ul {
   min-height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
+  justify-content: center;
 }
 
 .value-prop h2 {
@@ -178,6 +178,13 @@ ul {
   font-size: 1rem;
   letter-spacing: 2px;
   padding-top: 1rem;
+}
+
+.ot-widget {
+  grid-area: ot-widget;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-image {
@@ -681,7 +688,8 @@ Description = Abadi MT-Condensed Light or Barlow condensed
   .top-gallery-grid-container {
     grid-template-areas: 
       'value-prop'
-      'main-img';
+      'main-img'
+      'ot-widget';
     
     gap: 5px;
     margin-bottom: 2px;
@@ -689,8 +697,8 @@ Description = Abadi MT-Condensed Light or Barlow condensed
 
   .boxes-grid-container {
     grid-template-areas: 
-    'box-c'
     'box-b'
+    'box-c'
     'box-a';
 
     gap: 6px;
