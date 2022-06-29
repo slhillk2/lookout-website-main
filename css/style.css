@@ -307,21 +307,6 @@ blockquote::after {
   position:absolute;
 }
 
-.book-table {
-  display: flex;
-  flex-direction: column;
-}
-
-.book-table a {
-  color: #064273;
-  text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  font-size: 3rem;
-  padding: 0 10%;
-  font-family: 'Amatic SC', cursive;
-  text-decoration: underline;
-}
 
 /* footer ======================== */
 .footer {
