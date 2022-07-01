@@ -191,43 +191,6 @@ ul {
   grid-area: main-img;
 }
 
-.btn-book-now {
-  font-family: 'Amatic SC', cursive;
-  margin: 2rem auto;
-  padding: 0.75rem 1.5rem;
-  font-size: 2rem;
-  background-color: #064273;
-  color: #fff;
-  border-radius: 1rem;
-  box-shadow: 0px 2px black;
-}
-
-.btn-book-now:hover {
-  color: #064273;
-  background-color: #fff;
-}
-
-.btn-book-now:active {
-  transform: scale(90%);
-}
-
-.btn-book-now a::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f054";
-  margin-left: 15px;
-}
-
-.btn-book-now a {
-  display: block;
-  width: 100%;
-  color: #fff;
-}
-
-.btn-book-now a:hover {
-  color: #064273;
-}
-
 /* box img gallery ======================== */
 .boxes-grid-container {
   display: grid;
@@ -526,22 +489,23 @@ Description = Abadi MT-Condensed Light or Barlow condensed
 }
 
 .submenu-btn.active::after {
-  transform: rotate(45deg);  
+  display: none;  
 }
 
 .sub-menu {
   overflow: hidden;
-
 }
 
 .sub-menu-items {
   max-height: 0;
-  transition: max-height 0.5s ease-out;
+  /* transition: max-height 0.5s ease-out; */
+  display: none;
 }
 
 .sub-menu-items.active {
   max-height: 4000px;
   transition: max-height 0.5s ease-in;
+  display: block;
 }
 
 .menu-item {

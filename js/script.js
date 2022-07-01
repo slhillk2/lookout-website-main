@@ -20,6 +20,7 @@ toggleSubMenu.forEach(toggle => {
         removeActiveClasses()
         toggle.classList.toggle('active')
         toggle.nextElementSibling.classList.toggle('active')
+        toggle.scrollIntoView(true)
     })  
 });
 
