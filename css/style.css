@@ -272,18 +272,17 @@ blockquote::after {
 
 
 /* footer ======================== */
-.footer {
+footer {
   background-color: #064273;  
-  position: absolute;
   bottom: 0;
   width: 100vw;
-  height: 2.5rem;  
 }
 
 .footer-grid-container {
   background-color: #064273;
   margin: 0 auto;
   padding: 1rem 2rem;
+  max-width: 1000px;
   color: #fff;
   display: grid;
   grid-template-areas: 
@@ -293,6 +292,7 @@ blockquote::after {
 .address, .email-address, .number{
   display: flex;
   align-items: center;
+  padding: 0.3rem 0;
 }
 
 .address, .email-address, .number, i {
@@ -315,6 +315,7 @@ blockquote::after {
   grid-area: opening-times;
   justify-items: center;
   height: 100%;
+  padding: 0.3rem 0;
 }
 
 /* Gallery page ================================= */
@@ -664,7 +665,7 @@ Description = Abadi MT-Condensed Light or Barlow condensed
   }
 
   .opening-times {
-    padding-bottom: 10%;
+    padding: 5% 0;
   }
 
 }
